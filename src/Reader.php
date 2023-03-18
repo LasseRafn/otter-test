@@ -246,9 +246,13 @@ class Reader
 	}
 
 	/**
-	 * @return string
+	 * @return null|string
 	 */
 	public function getContent() {
+		if(empty($this->csv->getContent())) {
+			return null;
+		}
+		
 		return (string) $this->csv->getContent();
 	}
 
