@@ -294,9 +294,7 @@ class Reader
 		$linesToCheck = min( \count( $lines ), $linesToCheck );
 
 		for ( $i = 0; $i < $linesToCheck; $i++ ) {
-			$this->loops++;
 			foreach ( static::DELIMITERS as $delimiter ) {
-				$this->loops++;
 				$regExp = '/[' . $delimiter . ']/';
 				$fields = preg_split( $regExp, $lines[ $i ] );
 
