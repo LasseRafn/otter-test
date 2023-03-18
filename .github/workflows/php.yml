@@ -39,8 +39,8 @@ jobs:
     - name: Run tests
       run: php -d pcov.enabled=1 -d memory_limit=4G vendor/phpunit/phpunit/phpunit --coverage-clover=build/logs/clover.xml tests
       
-    - name: CodeCov
-      run: curl -Os https://uploader.codecov.io/latest/linux/codecov ; chmod +x codecov ; ./codecov
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@v3
 
     - name: Coverage Upload
       env:
