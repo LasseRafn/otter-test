@@ -15,7 +15,7 @@ class Reader
 		'empty'      => '__EMPTY__:',
 	];
 	
-	public $int loops = 0;
+	public int $loops = 0;
 
 	public const SUPPORTED_ENCODINGS = [
 		'UTF-8',
