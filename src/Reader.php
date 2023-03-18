@@ -243,7 +243,7 @@ class Reader
 	 * @return null|string
 	 */
 	public function getContent() {
-		if(empty($this->csv->getContent()) {
+		if(empty($this->csv->getContent())) {
 			return null;
 		}
 		
