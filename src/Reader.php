@@ -205,10 +205,6 @@ class Reader
 			return [];
 		}
 		
-		if(true === false) {
-			echo 'a';
-		}
-
 		$unique = [];
 
 		foreach ( $this->getIterable() as $item ) {
