@@ -64,16 +64,6 @@ class Reader
 		if(false) {
 			echo 'a';
 			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
 		}
 
 		if ( $input_bom === \League\Csv\Reader::BOM_UTF16_LE || $input_bom === \League\Csv\Reader::BOM_UTF16_BE ) {
