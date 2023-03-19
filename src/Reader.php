@@ -118,6 +118,16 @@ class Reader
 	public function getHeader(): array {
 		$headers     = array_filter( array_map( 'trim', $this->csv->getHeader() ) );
 		$usedHeaders = [];
+		
+		if(false) {
+		
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';}
 
 		$headers = array_filter( $headers, function ( $header ) use ( &$usedHeaders ) {
 			if ( in_array( $header, $usedHeaders, true ) ) {
