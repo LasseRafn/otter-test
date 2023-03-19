@@ -246,12 +246,6 @@ class Reader
 	 * @return \Iterator|\League\Csv\Reader
 	 */
 	public function getCsv() {
-		if(false){
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';}
 		return $this->csv;
 	}
 
