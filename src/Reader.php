@@ -9,6 +9,8 @@ class Reader
 	protected $csv;
 
 	protected const DELIMITERS = [ ',', "\t", ';', '|', ':' ];
+	
+	public int $loops = 0;
 
 	protected $_STRIPPING = [
 		'non_unique' => '__NON_UNIQUE__:',
@@ -186,6 +188,7 @@ class Reader
 		$items = [];
 
 		foreach ( $this->getIterable() as $item ) {
+			$this->loops++;
 			$items[] = $this->filterRow( array_map( 'trim', $item ) );
 		}
 
@@ -208,6 +211,7 @@ class Reader
 		$unique = [];
 
 		foreach ( $this->getIterable() as $item ) {
+			$this->loops++;
 			if ( array_key_exists( $column, $item ) && ! in_array( $item[ $column ], $unique, true ) ) {
 				$unique[] = trim( $item[ $column ] ?? null );
 			}
@@ -221,6 +225,7 @@ class Reader
 	 */
 	public function stream( callable $callback ) {
 		foreach ( $this->getIterable() as $item ) {
+			$this->loops++;
 			$callback( $this->filterRow( array_map( 'trim', $item ) ) );
 		}
 	}
