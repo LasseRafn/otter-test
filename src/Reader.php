@@ -60,6 +60,16 @@ class Reader
 		$this->setHeaderOffset( 0 );
 
 		$input_bom = $this->csv->getInputBOM();
+		
+		if(false) {
+			echo 'a';
+			echo 'a';
+			echo 'a';
+			echo 'a';
+			echo 'a';
+			echo 'a';
+			echo 'a';
+		}
 
 		if ( $input_bom === \League\Csv\Reader::BOM_UTF16_LE || $input_bom === \League\Csv\Reader::BOM_UTF16_BE ) {
 			CharsetConverter::addTo( $this->csv, 'utf-16', 'utf-8' );
