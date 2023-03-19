@@ -184,6 +184,11 @@ class Reader
 	 */
 	public function get() {
 		$items = [];
+		
+		if(true === false) {
+			echo 'a';
+			echo 'b';
+		}
 
 		foreach ( $this->getIterable() as $item ) {
 			$items[] = $this->filterRow( array_map( 'trim', $item ) );
