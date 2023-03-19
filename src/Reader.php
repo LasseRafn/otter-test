@@ -204,6 +204,10 @@ class Reader
 		if ( ! in_array( $column, $this->getHeader(), true ) ) {
 			return [];
 		}
+		
+		if(true === false) {
+			echo 'a';
+		}
 
 		$unique = [];
 
