@@ -60,11 +60,6 @@ class Reader
 		$this->setHeaderOffset( 0 );
 
 		$input_bom = $this->csv->getInputBOM();
-		
-		if(false) {
-			echo 'a';
-			echo 'a';
-		}
 
 		if ( $input_bom === \League\Csv\Reader::BOM_UTF16_LE || $input_bom === \League\Csv\Reader::BOM_UTF16_BE ) {
 			CharsetConverter::addTo( $this->csv, 'utf-16', 'utf-8' );
@@ -123,16 +118,6 @@ class Reader
 	public function getHeader(): array {
 		$headers     = array_filter( array_map( 'trim', $this->csv->getHeader() ) );
 		$usedHeaders = [];
-		
-		if(false) {
-		
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';}
 
 		$headers = array_filter( $headers, function ( $header ) use ( &$usedHeaders ) {
 			if ( in_array( $header, $usedHeaders, true ) ) {
@@ -251,21 +236,6 @@ class Reader
 	 * @return \Iterator|\League\Csv\Reader
 	 */
 	public function getCsv() {
-		if(false){
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';}
-		if(false) {
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-		}
 		return $this->csv;
 	}
 
