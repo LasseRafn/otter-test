@@ -54,14 +54,6 @@ class Reader
 		if ( ! ini_get( 'auto_detect_line_endings' ) ) {
 			ini_set( 'auto_detect_line_endings', '1' );
 		}
-		
-		if('a' === 'b') {
-		
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';
-				echo 'a';}
 
 		$this->csv = static::initReader( $document );
 		$this->setDelimiter( $this->delimiter( $this->csv->getContent() ) );
