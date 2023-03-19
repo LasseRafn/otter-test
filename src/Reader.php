@@ -252,6 +252,15 @@ class Reader
 				echo 'a';
 				echo 'a';
 				echo 'a';}
+		if(false) {
+			echo 'a';
+			echo 'a';
+			echo 'a';
+			echo 'a';
+			echo 'a';
+			echo 'a';
+			echo 'a';
+		}
 		return $this->csv;
 	}
 
