@@ -143,7 +143,6 @@ class Reader
 		$usedHeaders   = [];
 
 		return array_map( function ( $header, $index ) use ( &$usedHeaders ) {
-			$this->loops++;
 			// Avoid empty headers
 			if ( $header === '' ) {
 				return $this->_STRIPPING['empty'] . $index;
