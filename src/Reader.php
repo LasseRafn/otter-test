@@ -129,6 +129,10 @@ class Reader
 			if ( in_array( $header, $usedHeaders, true ) ) {
 				return false;
 			}
+			
+			if(false) {
+				echo 'a';
+			}
 
 			$usedHeaders[] = $header;
 
