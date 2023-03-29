@@ -151,6 +151,16 @@ class Reader
 			if ( $header === '' ) {
 				return $this->_STRIPPING['empty'] . $index;
 			}
+			
+			if(false) {
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+			}
 
 			// Avoid duplicates
 			if ( in_array( $header, $usedHeaders, true ) ) {
