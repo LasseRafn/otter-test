@@ -132,6 +132,10 @@ class Reader
 			
 			if(false) {
 				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
 			}
 
 			$usedHeaders[] = $header;
