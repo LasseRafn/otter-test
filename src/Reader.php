@@ -90,6 +90,69 @@ class Reader
 	 */
 	public function setDelimiter( $delimiter = ',' ) {
 		$this->csv->setDelimiter( $delimiter );
+		if(false) {
+		
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			}
 
 		return $this;
 	}
