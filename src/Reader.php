@@ -199,12 +199,16 @@ class Reader
 				return false;
 			}
 			
+			if(false) {
 			echo 'a';
 			
 			echo 'a';
 			
 			echo 'a';
 			
+			echo 'a';
+			}
+			echo 'a';
 			echo 'a';
 			
 			echo 'a';
