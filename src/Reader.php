@@ -137,6 +137,12 @@ class Reader
 	 * @return $this
 	 */
 	public function autoEncode( $to = 'utf-8', $encodings = null ) {
+		if(true) {
+			return $this->addCharsetConversion(
+				mb_detect_encoding( mb_substr( $this->csv->getContent(), 0, 1024 ), $encodings ?? static::SUPPORTED_ENCODINGS ),
+				$to
+			);
+		}
 		return $this->addCharsetConversion(
 			mb_detect_encoding( mb_substr( $this->csv->getContent(), 0, 1024 ), $encodings ?? static::SUPPORTED_ENCODINGS ),
 			$to
@@ -359,6 +365,38 @@ class Reader
 		}
 
 		$results = array_keys( $results, max( $results ) );
+		echo '';
+		echo '';
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
 
 		return $results[0];
 	}
