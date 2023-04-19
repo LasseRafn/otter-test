@@ -12,6 +12,9 @@ pipeline:
   - name: Setup
     cmd: |
       composer install --no-interaction --prefer-dist --optimize-autoloader
+      
+  - name: Enable Pcov
+    cmd: sudo phpenmod pcov
 
   - name: Run Tests
     cmd: php -d pcov.enabled=1 -d memory_limit=4G vendor/phpunit/phpunit/phpunit --coverage-clover=build/logs/clover.xml tests
