@@ -14,7 +14,7 @@ pipeline:
       composer install --no-interaction --prefer-dist --optimize-autoloader
 
   - name: Run Tests
-    cmd: phpunit
+    cmd: php -d pcov.enabled=1 -d memory_limit=4G vendor/phpunit/phpunit/phpunit --coverage-clover=build/logs/clover.xml tests
     
   - name: Coverage Upload
     cmd: curl -Ls https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh | bash -s -- --repo-token $OTTERWISE_TOKEN --verbose true --ignore-errors true
