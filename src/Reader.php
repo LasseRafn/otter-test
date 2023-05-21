@@ -108,14 +108,6 @@ class Reader
 				mb_detect_encoding( mb_substr( $this->csv->getContent(), 0, 1024 ), $encodings ?? static::SUPPORTED_ENCODINGS ),
 				$to
 			);
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
 		}
 		return $this->addCharsetConversion(
 			mb_detect_encoding( mb_substr( $this->csv->getContent(), 0, 1024 ), $encodings ?? static::SUPPORTED_ENCODINGS ),
