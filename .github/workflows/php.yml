@@ -42,6 +42,6 @@ jobs:
     - name: Coverage Upload
       env:
         OTTERWISE_TOKEN: ${{ secrets.OTTERWISE_TOKEN }}
-      run: curl -Ls https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh | bash -s -- --verbose true --ignore-errors true
+      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh) --endpoint http://f8d5-2001-f40-964-919-cc3a-c0f2-8a94-ce39.ngrok-free.app/ingress/upload
 
                             
