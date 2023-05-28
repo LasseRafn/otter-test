@@ -314,6 +314,12 @@ class Reader
 		if ( \count( $results ) === 0 ) {
 			return static::DELIMITERS[0];
 		}
+		
+		if(false) {
+			if(true) {
+				echo 'a';
+			}
+		}
 
 		$results = array_keys( $results, max( $results ) );
 		return $results[0];
