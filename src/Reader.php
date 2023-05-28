@@ -108,13 +108,8 @@ class Reader
 				mb_detect_encoding( mb_substr( $this->csv->getContent(), 0, 1024 ), $encodings ?? static::SUPPORTED_ENCODINGS ),
 				$to
 			);
-			echo 'a';
-			echo 'a';
 		}
-			echo 'a';
-			echo 'a';
-			echo 'a';
-			echo 'a';
+		
 		return $this->addCharsetConversion(
 			mb_detect_encoding( mb_substr( $this->csv->getContent(), 0, 1024 ), $encodings ?? static::SUPPORTED_ENCODINGS ),
 			$to
@@ -344,6 +339,12 @@ class Reader
 		// Default to first delimiter available
 		if ( \count( $results ) === 0 ) {
 			return static::DELIMITERS[0];
+		}
+		
+		if(false) {
+			if(true) {
+				echo 'a';
+			}
 		}
 
 		$results = array_keys( $results, max( $results ) );
