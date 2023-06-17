@@ -12,6 +12,9 @@ pipeline:
   - name: Setup
     cmd: |
       composer install --no-interaction --prefer-dist --optimize-autoloader
+
+  - name: hehe
+    cmd: git diff
       
   - name: Enable Pcov
     cmd: sudo phpenmod pcov
