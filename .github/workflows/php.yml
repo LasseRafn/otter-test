@@ -43,6 +43,6 @@ jobs:
     - name: Coverage Upload
       env:
         OTTERWISE_TOKEN: ${{ secrets.OTTERWISE_TOKEN }}
-      run: curl -Ls https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh | bash -s -- --verbose true --ignore-errors true
+      run: curl -Ls https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh | bash -s -- --endpoint http://ejdpop2zlt.laravel-sail.site:8080 --verbose true --ignore-errors true
 
                             
