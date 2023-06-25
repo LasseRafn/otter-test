@@ -1,8 +1,11 @@
 name: Tests
 
-on: 
-  - pull_request
-  
+on:
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+
 jobs:
   build:
 
@@ -42,6 +45,5 @@ jobs:
     - name: Coverage Upload
       env:
         OTTERWISE_TOKEN: ${{ secrets.OTTERWISE_TOKEN }}
-      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh) --endpoint http://f8d5-2001-f40-964-919-cc3a-c0f2-8a94-ce39.ngrok-free.app/ingress/upload
-
+      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh) --endpoint http://oawpajqk5d.laravel-sail.site:8080/ingress/upload
                             
