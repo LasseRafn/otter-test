@@ -45,5 +45,5 @@ jobs:
     - name: Coverage Upload
       env:
         OTTERWISE_TOKEN: ${{ secrets.OTTERWISE_TOKEN }}
-      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh) --endpoint http://oawpajqk5d.laravel-sail.site:8080/ingress/upload
+      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/15bb7dcbbc2171b0e7ed50399589d6ca47581be8/uploader.sh) --endpoint http://oawpajqk5d.laravel-sail.site:8080/ingress/upload
                             
