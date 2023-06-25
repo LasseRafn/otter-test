@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: shivammathur/setup-php@15c43e89cdef867065b0213be354c2841860869e
       with:
-        php-version: 7.4
+        php-version: 8.1
         extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, sqlite, pdo_sqlite, bcmath, soap, mysql, intl, gd, exif, iconv, imagick
         coverage: pcov
     - uses: actions/checkout@v3
@@ -45,6 +45,5 @@ jobs:
     - name: Coverage Upload
       env:
         OTTERWISE_TOKEN: ${{ secrets.OTTERWISE_TOKEN }}
-      run: curl -Ls https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh | bash -s -- --endpoint http://oawpajqk5d.laravel-sail.site:8080/ingress/upload --verbose true --ignore-errors true
-
+      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh) --endpoint http://oawpajqk5d.laravel-sail.site:8080/ingress/upload
                             

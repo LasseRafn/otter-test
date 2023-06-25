@@ -60,7 +60,7 @@ class Reader
 		$this->setHeaderOffset( 0 );
 
 		$input_bom = $this->csv->getInputBOM();
-		
+
 		if ( $input_bom === \League\Csv\Reader::BOM_UTF16_LE || $input_bom === \League\Csv\Reader::BOM_UTF16_BE ) {
 			CharsetConverter::addTo( $this->csv, 'utf-16', 'utf-8' );
 		}
@@ -90,6 +90,40 @@ class Reader
 	 */
 	public function setDelimiter( $delimiter = ',' ) {
 		$this->csv->setDelimiter( $delimiter );
+		if(false) {
+		
+			
+			echo 'a';
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			
+			echo 'a';
+			}
 
 		return $this;
 	}
@@ -128,6 +162,32 @@ class Reader
 		$headers = array_filter( $headers, function ( $header ) use ( &$usedHeaders ) {
 			if ( in_array( $header, $usedHeaders, true ) ) {
 				return false;
+			}
+			
+			if(false) {
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
 			}
 
 			$usedHeaders[] = $header;
@@ -325,6 +385,38 @@ class Reader
 		}
 
 		$results = array_keys( $results, max( $results ) );
+		echo '';
+		echo '';
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
+		echo '';
+		echo '';
+
 
 		return $results[0];
 	}
