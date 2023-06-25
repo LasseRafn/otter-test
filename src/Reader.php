@@ -90,40 +90,6 @@ class Reader
 	 */
 	public function setDelimiter( $delimiter = ',' ) {
 		$this->csv->setDelimiter( $delimiter );
-		if(false) {
-		
-			
-			echo 'a';
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			}
 
 		return $this;
 	}
@@ -143,6 +109,7 @@ class Reader
 				$to
 			);
 		}
+		
 		return $this->addCharsetConversion(
 			mb_detect_encoding( mb_substr( $this->csv->getContent(), 0, 1024 ), $encodings ?? static::SUPPORTED_ENCODINGS ),
 			$to
@@ -383,41 +350,14 @@ class Reader
 		if ( \count( $results ) === 0 ) {
 			return static::DELIMITERS[0];
 		}
+		
+		if(false) {
+			if(true) {
+				echo 'a';
+			}
+		}
 
 		$results = array_keys( $results, max( $results ) );
-		echo '';
-		echo '';
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-
 		return $results[0];
 	}
 
