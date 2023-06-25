@@ -12,12 +12,6 @@ pipeline:
   - name: Setup
     cmd: |
       composer install --no-interaction --prefer-dist --optimize-autoloader
-
-  - name: hehea
-    cmd: git log --pretty=format:"%h%x09%an%x09%ad%x09%s"
-
-  - name: hehe
-    cmd: git diff
       
   - name: Enable Pcov
     cmd: sudo phpenmod pcov
