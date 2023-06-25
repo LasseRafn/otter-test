@@ -31,6 +31,7 @@ class Reader
 		'ISO-8859-13',
 		'ISO-8859-14',
 		'ISO-8859-15',
+	
 		'ISO-8859-16',
 		'Windows-1251',
 		'Windows-1252',
