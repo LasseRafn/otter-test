@@ -39,11 +39,11 @@ jobs:
     - name: Run tests
       run: php -d pcov.enabled=1 -d memory_limit=4G vendor/phpunit/phpunit/phpunit --coverage-clover=build/logs/clover.xml tests
 
-    - name: Upload coverage reports to Codecov
-      run : curl -Os https://uploader.codecov.io/latest/linux/codecov ; chmod +x codecov ; ./codecov
+    #- name: Upload coverage reports to Codecov
+    #  run : curl -Os https://uploader.codecov.io/latest/linux/codecov ; chmod +x codecov ; ./codecov
 
     - name: Coverage Upload
       env:
         OTTERWISE_TOKEN: ${{ secrets.OTTERWISE_TOKEN }}
-      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh) --endpoint http://i5vkemeng0.laravel-sail.site:8080/ingress/upload
+      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/main/uploader.sh) --endpoint http://4zqr9v9csf.laravel-sail.site:8080/ingress/upload
                             
