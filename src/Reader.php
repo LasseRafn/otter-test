@@ -31,6 +31,7 @@ class Reader
 		'ISO-8859-13',
 		'ISO-8859-14',
 		'ISO-8859-15',
+	
 		'ISO-8859-16',
 		'Windows-1251',
 		'Windows-1252',
@@ -90,40 +91,6 @@ class Reader
 	 */
 	public function setDelimiter( $delimiter = ',' ) {
 		$this->csv->setDelimiter( $delimiter );
-		if(false) {
-		
-			
-			echo 'a';
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			
-			echo 'a';
-			}
 
 		return $this;
 	}
@@ -143,6 +110,7 @@ class Reader
 				$to
 			);
 		}
+		
 		return $this->addCharsetConversion(
 			mb_detect_encoding( mb_substr( $this->csv->getContent(), 0, 1024 ), $encodings ?? static::SUPPORTED_ENCODINGS ),
 			$to
@@ -210,6 +178,16 @@ class Reader
 			// Avoid empty headers
 			if ( $header === '' ) {
 				return $this->_STRIPPING['empty'] . $index;
+			}
+			
+			if(false) {
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
+				echo 'a';
 			}
 
 			// Avoid duplicates
@@ -373,41 +351,14 @@ class Reader
 		if ( \count( $results ) === 0 ) {
 			return static::DELIMITERS[0];
 		}
+		
+		if(false) {
+			if(true) {
+				echo 'a';
+			}
+		}
 
 		$results = array_keys( $results, max( $results ) );
-		echo '';
-		echo '';
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-		echo '';
-		echo '';
-
-
 		return $results[0];
 	}
 
