@@ -2,31 +2,10 @@
 
 if(false) {
 
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
-  echo 'a';
+  if( $user->username === 'gavin.belson' ) {
+    abort(403);
+  }
+
+  return 'Welcome!';
+  
 }
