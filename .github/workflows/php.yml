@@ -39,6 +39,9 @@ jobs:
     - name: Run tests
       run: php -d pcov.enabled=1 -d memory_limit=4G vendor/phpunit/phpunit/phpunit --coverage-clover=build/logs/clover.xml tests
 
+    - name: Run infection
+      run: php -d pcov.enabled=1 -d memory_limit=4G vendor/bin/infection
+
     #- name: Upload coverage reports to Codecov
     #  run : curl -Os https://uploader.codecov.io/latest/linux/codecov ; chmod +x codecov ; ./codecov
 
