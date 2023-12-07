@@ -43,16 +43,16 @@ jobs:
       run: php -d pcov.enabled=1 -d memory_limit=4G vendor/bin/infection
 
     - name: Privacy-ify Infection
-      run: jq 'del(.escaped.mutator.originalSourceCode)' infection-log.json > infection-log.json
+      run: jq '.escaped |= map(del(.mutator.mutatedSourceCode))' infection-log.json > infection-log.json
       
     - name: Privacy-ify Infection again
-      run: jq 'del(.escaped.mutator.mutatedSourceCode)' infection-log.json > infection-log.json
+      run: jq '.escaped |= map(del(.mutator.originalSourceCode))' infection-log.json > infection-log.json
 
     - name: Privacy-ify Infection again again
-      run: jq 'del(.timeouted.mutator.originalSourceCode)' infection-log.json > infection-log.json
+      run: jq '.timeouted |= map(del(.mutator.mutatedSourceCode))' infection-log.json > infection-log.json
 
     - name: Privacy-ify Infection again again again
-      run: jq 'del(.timeouted.mutator.mutatedSourceCode)' infection-log.json > infection-log.json
+      run: jq '.timeouted |= map(del(.mutator.originalSourceCode))' infection-log.json > infection-log.json
 
     - name: Debug Infection
       run: cat infection-log.json
