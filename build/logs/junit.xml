@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="18" assertions="28" errors="0" failures="0" skipped="0" time="0.002227">
+    <testsuite name="Package Test Suite" tests="18" assertions="28" errors="0" failures="0" skipped="0" time="0.002227">
+      <testsuite name="LasseRafn\CsvReader\Tests\DuplicateHeaderTest" file="/Users/lasserafn/Downloads/otter-test/tests/DuplicateHeaderTest.php" tests="5" assertions="8" errors="0" failures="0" skipped="0" time="0.001301">
+        <testcase name="testPluckInvalidColumn" file="/Users/lasserafn/Downloads/otter-test/tests/DuplicateHeaderTest.php" line="48" class="LasseRafn\CsvReader\Tests\DuplicateHeaderTest" classname="LasseRafn.CsvReader.Tests.DuplicateHeaderTest" assertions="2" time="0.000945"/>
+        <testcase name="testGetHeader" file="/Users/lasserafn/Downloads/otter-test/tests/DuplicateHeaderTest.php" line="24" class="LasseRafn\CsvReader\Tests\DuplicateHeaderTest" classname="LasseRafn.CsvReader.Tests.DuplicateHeaderTest" assertions="1" time="0.000071"/>
+        <testcase name="testPluckValidColumn" file="/Users/lasserafn/Downloads/otter-test/tests/DuplicateHeaderTest.php" line="40" class="LasseRafn\CsvReader\Tests\DuplicateHeaderTest" classname="LasseRafn.CsvReader.Tests.DuplicateHeaderTest" assertions="2" time="0.000124"/>
+        <testcase name="testGet" file="/Users/lasserafn/Downloads/otter-test/tests/DuplicateHeaderTest.php" line="32" class="LasseRafn\CsvReader\Tests\DuplicateHeaderTest" classname="LasseRafn.CsvReader.Tests.DuplicateHeaderTest" assertions="2" time="0.000091"/>
+        <testcase name="testStream" file="/Users/lasserafn/Downloads/otter-test/tests/DuplicateHeaderTest.php" line="11" class="LasseRafn\CsvReader\Tests\DuplicateHeaderTest" classname="LasseRafn.CsvReader.Tests.DuplicateHeaderTest" assertions="1" time="0.000069"/>
+      </testsuite>
+      <testsuite name="LasseRafn\CsvReader\Tests\ReaderTest" file="/Users/lasserafn/Downloads/otter-test/tests/ReaderTest.php" tests="7" assertions="10" errors="0" failures="0" skipped="0" time="0.000495">
+        <testcase name="testStream" file="/Users/lasserafn/Downloads/otter-test/tests/ReaderTest.php" line="11" class="LasseRafn\CsvReader\Tests\ReaderTest" classname="LasseRafn.CsvReader.Tests.ReaderTest" assertions="1" time="0.000065"/>
+        <testcase name="testMake" file="/Users/lasserafn/Downloads/otter-test/tests/ReaderTest.php" line="56" class="LasseRafn\CsvReader\Tests\ReaderTest" classname="LasseRafn.CsvReader.Tests.ReaderTest" assertions="1" time="0.000098"/>
+        <testcase name="testGet" file="/Users/lasserafn/Downloads/otter-test/tests/ReaderTest.php" line="33" class="LasseRafn\CsvReader\Tests\ReaderTest" classname="LasseRafn.CsvReader.Tests.ReaderTest" assertions="2" time="0.000075"/>
+        <testcase name="testPluckInvalidColumn" file="/Users/lasserafn/Downloads/otter-test/tests/ReaderTest.php" line="51" class="LasseRafn\CsvReader\Tests\ReaderTest" classname="LasseRafn.CsvReader.Tests.ReaderTest" assertions="2" time="0.000055"/>
+        <testcase name="testGetContent" file="/Users/lasserafn/Downloads/otter-test/tests/ReaderTest.php" line="61" class="LasseRafn\CsvReader\Tests\ReaderTest" classname="LasseRafn.CsvReader.Tests.ReaderTest" assertions="1" time="0.000064"/>
+        <testcase name="testPluckValidColumn" file="/Users/lasserafn/Downloads/otter-test/tests/ReaderTest.php" line="42" class="LasseRafn\CsvReader\Tests\ReaderTest" classname="LasseRafn.CsvReader.Tests.ReaderTest" assertions="2" time="0.000086"/>
+        <testcase name="testGetHeader" file="/Users/lasserafn/Downloads/otter-test/tests/ReaderTest.php" line="25" class="LasseRafn\CsvReader\Tests\ReaderTest" classname="LasseRafn.CsvReader.Tests.ReaderTest" assertions="1" time="0.000052"/>
+      </testsuite>
+      <testsuite name="LasseRafn\CsvReader\Tests\WhitespaceHeaderTest" file="/Users/lasserafn/Downloads/otter-test/tests/WhitespaceHeaderTest.php" tests="6" assertions="10" errors="0" failures="0" skipped="0" time="0.000431">
+        <testcase name="testCount" file="/Users/lasserafn/Downloads/otter-test/tests/WhitespaceHeaderTest.php" line="40" class="LasseRafn\CsvReader\Tests\WhitespaceHeaderTest" classname="LasseRafn.CsvReader.Tests.WhitespaceHeaderTest" assertions="2" time="0.000078"/>
+        <testcase name="testStream" file="/Users/lasserafn/Downloads/otter-test/tests/WhitespaceHeaderTest.php" line="11" class="LasseRafn\CsvReader\Tests\WhitespaceHeaderTest" classname="LasseRafn.CsvReader.Tests.WhitespaceHeaderTest" assertions="1" time="0.000067"/>
+        <testcase name="testGetHeader" file="/Users/lasserafn/Downloads/otter-test/tests/WhitespaceHeaderTest.php" line="24" class="LasseRafn\CsvReader\Tests\WhitespaceHeaderTest" classname="LasseRafn.CsvReader.Tests.WhitespaceHeaderTest" assertions="1" time="0.000054"/>
+        <testcase name="testPluckInvalidColumn" file="/Users/lasserafn/Downloads/otter-test/tests/WhitespaceHeaderTest.php" line="53" class="LasseRafn\CsvReader\Tests\WhitespaceHeaderTest" classname="LasseRafn.CsvReader.Tests.WhitespaceHeaderTest" assertions="2" time="0.000059"/>
+        <testcase name="testPluckValidColumn" file="/Users/lasserafn/Downloads/otter-test/tests/WhitespaceHeaderTest.php" line="45" class="LasseRafn\CsvReader\Tests\WhitespaceHeaderTest" classname="LasseRafn.CsvReader.Tests.WhitespaceHeaderTest" assertions="2" time="0.000085"/>
+        <testcase name="testGet" file="/Users/lasserafn/Downloads/otter-test/tests/WhitespaceHeaderTest.php" line="32" class="LasseRafn\CsvReader\Tests\WhitespaceHeaderTest" classname="LasseRafn.CsvReader.Tests.WhitespaceHeaderTest" assertions="2" time="0.000086"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
