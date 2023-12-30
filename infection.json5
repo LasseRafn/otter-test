@@ -6,7 +6,8 @@
         ]
     },
     "logs": {
-        "summaryJson": "infection-log.json"
+        "json": "infection-log.json",
+        "summaryJson": "infection-log-summary.json"
     },
     "mutators": {
         "@default": true
