@@ -51,5 +51,5 @@ jobs:
     - name: Coverage Upload
       env:
         OTTERWISE_TOKEN: ${{ secrets.OTTERWISE_TOKEN }}
-      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/9dc9a8d7f5c79fa0d397dc7dc13a2cac3af98ad4/uploader.sh)
+      run: bash <(curl -s https://raw.githubusercontent.com/getOtterWise/bash-uploader/aab0512222101d1a3a84e4a6ee46c6040cf1a914/uploader.sh)
                             
