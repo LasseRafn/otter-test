@@ -41,5 +41,6 @@ jobs:
 
     - uses: getOtterWise/coverage-action@main
       with:
+        file: build/logs/clover.xml
         token: ${{ secrets.OTTERWISE_TOKEN }}
                             
