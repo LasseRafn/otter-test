@@ -16,5 +16,9 @@ jobs:
       with:
         fetch-depth: 2
 
-    - name: diff
-      run: git diff
+    - name: diff 1
+      run: git diff HEAD^1 HEAD --unified=0
+      
+
+    - name: diff 2
+      run: git diff $(git merge-base master HEAD) HEAD --unified=0
