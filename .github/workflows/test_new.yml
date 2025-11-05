@@ -42,5 +42,6 @@ jobs:
     - uses: getOtterWise/coverage-action@main
       with:
         file: build/logs/clover.xml
+        bash-uploader-sha: 8a19e6a4ed11502d7833876d2d2f99286d3972d1
         token: ${{ secrets.OTTERWISE_TOKEN }}
                             
