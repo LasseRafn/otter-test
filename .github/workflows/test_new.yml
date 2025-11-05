@@ -39,9 +39,9 @@ jobs:
     - name: Run tests
       run: php -d pcov.enabled=1 -d memory_limit=4G vendor/phpunit/phpunit/phpunit --coverage-clover=build/logs/clover.xml tests
 
-    - uses: getOtterWise/coverage-action@test-dynamic-sha
+    - uses: getOtterWise/coverage-action@main
       with:
         file: build/logs/clover.xml
-        bash-uploader-sha: 967b6c2338b2ff92ba7a3adf3d947e211793f83f
+        bash-uploader-sha: 8a19e6a4ed11502d7833876d2d2f99286d3972d1
         token: ${{ secrets.OTTERWISE_TOKEN }}
                             
